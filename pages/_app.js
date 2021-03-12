@@ -1,5 +1,6 @@
 // import "tailwindcss/tailwind.css"
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/style.scss";
 
 import "../styles/globals.scss";
 import "swiper/swiper.min.css";

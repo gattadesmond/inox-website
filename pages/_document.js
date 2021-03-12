@@ -17,25 +17,19 @@ class SojuWebsite extends Document {
             crossOrigin="anonymous"
           />
 
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="/css/bootstrap.min.css"
+            href="https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap"
             rel="stylesheet"
-            type="text/css"
           />
 
-          <link href="/css/animate.css" rel="stylesheet" type="text/css" />
-
-          <link href="/css/base.css" rel="stylesheet" type="text/css" />
-
-          <link href="/css/shortcodes.css" rel="stylesheet" type="text/css" />
-
-          <link href="/css/style.css" rel="stylesheet" type="text/css" />
-
-          <link href="/css/responsive.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="/css/libraries.css"></link>
         </Head>
         <body className="">
-          <Main />
-          <NextScript />
+          <div className="wrapper">
+            <Main />
+            <NextScript />
+          </div>
         </body>
       </Html>
     );

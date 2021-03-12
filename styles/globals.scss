@@ -37,3 +37,18 @@ a {
   -webkit-align-items: center;
   align-items: center;
 }
+
+.bg-metal {
+  background: #ece9e6; 
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  );
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); 
+  background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+}
