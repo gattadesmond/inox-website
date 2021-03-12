@@ -2,7 +2,10 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "../styles/globals.scss";
+import "swiper/swiper.min.css";
 import NProgress from "../components/nprogress";
+// https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
+
 
 
 import useSWR, { SWRConfig } from "swr";

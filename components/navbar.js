@@ -8,8 +8,7 @@ function Navbar() {
 
   return (
     <>
-     
-     
+    
       <style jsx>{``}</style>
     </>
   );
