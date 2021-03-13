@@ -8,6 +8,8 @@ import Customer from "@/components/home/customer";
 import Product from "@/components/home/product";
 import Service from "@/components/home/service";
 import TinTuc from "@/components/home/tintuc";
+import Contact from "@/components/home/contact";
+import Footer from "@/components/footer";
 
 import { ORG_NAME } from "@/lib/constants";
 
@@ -28,8 +30,12 @@ export default function Home() {
       <Product />
 
       <Service />
-      
+
       <TinTuc />
+
+      <Contact />
+
+      <Footer />
     </Page>
   );
 }

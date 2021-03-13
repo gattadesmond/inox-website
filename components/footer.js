@@ -1,505 +1,186 @@
 import { memo } from "react";
 import cn from "classnames";
 
-import NavBar from "./navbar";
 
 const Footer = ({ sticky = true }) => {
   return (
     <>
-      <header className={cn({ sticky })} id="site-header" className="header">
-        <div className="top-bar">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-md-4">
-                <div className="topbar-link text-left">
-                  <ul className="list-inline">
-                    <li className="list-inline-item">
-                      <a href="mailto:themeht23@gmail.com">
-                        <i className="far fa-envelope-open" />
-                        themeht23@gmail.com
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="tel:+912345678900">
-                        <i className="fas fa-mobile-alt" />
-                        +91-234-567-8900
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4 col-sm-6 text-center">
-                <div className="search-box">
-                  <form
-                    action="contact.html"
-                    method="post"
-                    className="form-inline my-2 my-lg-0"
-                  >
-                    <input
-                      className="form-control"
-                      required
-                      type="search"
-                      placeholder="Search"
-                    />
-                    <button className="btn" type="submit">
-                      <i className="fas fa-search" />
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div className="col-md-4 col-sm-6 text-right">
-                <div className="social-icons social-hover top-social-list text-right">
-                  <ul className="list-inline">
-                    <li className="social-facebook">
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li className="social-gplus">
-                      <a href="#">
-                        <i className="fab fa-google-plus-g" />
-                      </a>
-                    </li>
-                    <li className="social-twitter">
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li className="social-linkedin">
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="header-wrap">
+      <footer id="footer" className="footer">
+        <div className="footer-top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-12">
-                {/* Navbar */}
-                <nav className="navbar navbar-expand-lg">
-                  <a className="navbar-brand logo" href="index.html">
-                    <img
-                      id="logo-img"
-                      className="img-center"
-                      src="images/logo.png"
-                      alt=""
-                    />
-                  </a>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="navbar-toggler-icon" />
-                  </button>
-                  <div
-                    className="collapse navbar-collapse"
-                    id="navbarNavDropdown"
-                  >
-                    {/* Left nav */}
-                    <ul className="nav navbar-nav ml-auto">
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link active dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Home
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="index.html">Home 1</a>
-                          </li>
-                          <li>
-                            <a href="index-2.html">Home 2</a>
-                          </li>
-                          <li>
-                            <a href="index-3.html">Home 3</a>
-                          </li>
-                          <li>
-                            <a href="index-4.html">Home 4</a>
-                          </li>
-                          <li>
-                            <a href="index-5.html">Home 5</a>
-                          </li>
-                        </ul>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__widget footer__widget-about">
+                <h6 className="footer__widget-title">Quick Contact</h6>
+                <div className="footer__widget-content">
+                  <p className="color-gray">
+                    If you have any questions or need help, feel free to contact
+                    with our team.
+                  </p>
+                  <p className="footer__contact-phone">
+                    <i className="icon-phone" />
+                    <a href="tel:5565454117">55 654 54117</a>
+                  </p>
+                  <p>
+                    2307 Beverley Rd Brooklyn, New York <br />
+                    11226 United States.
+                  </p>
+                  <ul className="social__icons">
+                    <li>
+                      <a href="#">
+                        <i className="fa fa-facebook" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa fa-instagram" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa fa-twitter" />
+                      </a>
+                    </li>
+                  </ul>
+                  {/* /.social-icons */}
+                </div>
+              </div>
+              {/* /.col-xl-3 */}
+              <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 offset-xl-1 footer__widget footer__widget-nav">
+                <h6 className="footer__widget-title">Company</h6>
+                <div className="footer__widget-content">
+                  <nav>
+                    <ul className="list-unstyled">
+                      <li>
+                        <a href="#">About Us</a>
                       </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Pages
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="about-us.html">About Us</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">Faq</a>
-                          </li>
-                          <li>
-                            <a href="team-single.html">Team Details</a>
-                          </li>
-                          <li>
-                            <a href="coming-soon.html">Coming Soon</a>
-                          </li>
-                          <li>
-                            <a href="error-page.html">Error 404</a>
-                          </li>
-                        </ul>
+                      <li>
+                        <a href="#">Meet Our Team</a>
                       </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Solutions
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="chemical-research.html">
-                              Chemical Research
-                            </a>
-                          </li>
-                          <li>
-                            <a href="energy-&-power-engineering.html">
-                              Energy &amp; Power Engineering
-                            </a>
-                          </li>
-                          <li>
-                            <a href="petroleum-and-gas.html">
-                              Petroleum and Gas
-                            </a>
-                          </li>
-                          <li>
-                            <a href="agriculture-engineering.html">
-                              Agriculture Engineering
-                            </a>
-                          </li>
-                          <li>
-                            <a href="mechanical-engineering.html">
-                              Mechanical Engineering
-                            </a>
-                          </li>
-                          <li>
-                            <a href="civil-engineering.html">
-                              Civil Engineering
-                            </a>
-                          </li>
-                        </ul>
+                      <li>
+                        <a href="#">News &amp; Media</a>
                       </li>
-                      <li className="nav-item dropdown position-static">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Element
-                        </a>
-                        <ul className="dropdown-menu w-100 p-3">
-                          <li className="container">
-                            <div className="row w-100">
-                              <div className="col-lg-4 col-12">
-                                <ul className="list-unstyled">
-                                  <li>
-                                    <a href="shortcode-accordions.html">
-                                      Accordion
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-button.html">Buttons</a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-clients.html">Clients</a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-counter.html">Counter</a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-call-to-action.html">
-                                      Call to action
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              {/* /.col-md-4  */}
-                              <div className="col-lg-4 col-12">
-                                <ul className="list-unstyled">
-                                  <li>
-                                    <a href="shortcode-featured-box.html">
-                                      Featured Box
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-tab.html">Tabs</a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-blog-post.html">
-                                      Post Style
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-pricing.html">
-                                      Pricing tables
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-progress-bar.html">
-                                      Progress Bar
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              {/* /.col-md-4  */}
-                              <div className="col-lg-4 col-12">
-                                <ul className="list-unstyled">
-                                  <li>
-                                    <a href="shortcode-social-icon.html">
-                                      Social icon
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-testimonials.html">
-                                      Testimonials
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-team.html">Team</a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-heading.html">
-                                      Heading Style
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="shortcode-typography.html">
-                                      Typography
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          {/*  /.container  */}
-                        </ul>
+                      <li>
+                        <a href="#">Case Studies</a>
                       </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Blog
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li className="dropdown dropdown-submenu">
-                            <a
-                              href="#"
-                              className="dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Blog Classic
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="blog-left-sidebar.html">
-                                  Left Sidebar
-                                </a>
-                              </li>
-                              <li>
-                                <a href="blog-right-sidebar.html">
-                                  Right Sidebar
-                                </a>
-                              </li>
-                              <li>
-                                <a href="blog-fullwidth.html">Fullwidth</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="dropdown dropdown-submenu">
-                            <a
-                              href="#"
-                              className="dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Blog Grid
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="blog-grid-2.html">Grid 2</a>
-                              </li>
-                              <li>
-                                <a href="blog-grid-3.html">Grid 3</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="dropdown dropdown-submenu">
-                            <a
-                              href="#"
-                              className="dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Blog Masonry
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="blog-masonry-grid-2.html">Grid 2</a>
-                              </li>
-                              <li>
-                                <a href="blog-masonry-grid-3.html">Grid 3</a>
-                              </li>
-                              <li>
-                                <a href="blog-masonry-fullwidth.html">
-                                  Fullwidth
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="dropdown dropdown-submenu">
-                            <a
-                              href="#"
-                              className="dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Blog Single
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="blog-details-left-sidebar.html">
-                                  Left Sidebar
-                                </a>
-                              </li>
-                              <li>
-                                <a href="blog-details-right-sidebar.html">
-                                  Right Sidebar
-                                </a>
-                              </li>
-                              <li>
-                                <a href="blog-details-fullwidth.html">
-                                  Fullwidth
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li>
+                        <a href="#">Contacts</a>
                       </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Project
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li className="dropdown dropdown-submenu">
-                            <a
-                              href="#"
-                              className="dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Project Grid
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="project-grid-2.html">Grid 2</a>
-                              </li>
-                              <li>
-                                <a href="project-grid-3.html">Grid 3</a>
-                              </li>
-                              <li>
-                                <a href="project-grid-4.html">Grid 4</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="dropdown dropdown-submenu">
-                            <a
-                              href="#"
-                              className="dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Project Masonry
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="project-masonary-grid-2.html">
-                                  Grid 2
-                                </a>
-                              </li>
-                              <li>
-                                <a href="project-masonary-grid-3.html">
-                                  Grid 3
-                                </a>
-                              </li>
-                              <li>
-                                <a href="project-masonary-grid-4.html">
-                                  Grid 4
-                                </a>
-                              </li>
-                              <li>
-                                <a href="project-masonary-full-width.html">
-                                  FullWidth
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="project-details.html">Project Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Contact
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="contact-1.html">Contact 1</a>
-                          </li>
-                          <li>
-                            <a href="contact-2.html">Contact 2</a>
-                          </li>
-                          <li>
-                            <a href="contact-3.html">Contact 3</a>
-                          </li>
-                        </ul>
+                      <li>
+                        <a href="#">Careers</a>
                       </li>
                     </ul>
-                  </div>
-                </nav>
+                  </nav>
+                </div>
+                {/* /.footer-widget-content */}
               </div>
+              {/* /.col-xl-2 */}
+              <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 footer__widget footer__widget-nav">
+                <h6 className="footer__widget-title">Industries</h6>
+                <div className="footer__widget-content">
+                  <nav>
+                    <ul className="list-unstyled">
+                      <li>
+                        <a href="#">Retail &amp; Consumer</a>
+                      </li>
+                      <li>
+                        <a href="#">Sciences &amp; Healthcare</a>
+                      </li>
+                      <li>
+                        <a href="#">Industrial &amp; Chemical</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Generation</a>
+                      </li>
+                      <li>
+                        <a href="#">Food &amp; Beverage</a>
+                      </li>
+                      <li>
+                        <a href="#">Oil &amp; Gas</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                {/* /.footer-widget-content */}
+              </div>
+              {/* /.col-xl-2 */}
+              <div className="col-sm-12 col-md-10 col-lg-6 col-xl-4 footer__widget footer__widget-newsletter">
+                <div className="footer__widget-content">
+                  <p>
+                    Sign up for industry alerts, our latest news, thoughts, and
+                    insights from Koira.
+                  </p>
+                  <form className="widget__newsletter-form">
+                    <div className="form-group mb-0">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Your Email Address"
+                      />
+                      <button
+                        type="submit"
+                        className="btn btn__primary btn__hover2"
+                      >
+                        <i className="icon-arrow-right" />
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                {/* /.footer-widget-content */}
+                <p className="text-right fz-13 mt-20 mb-0">
+                  You may withdraw your consent at any time!
+                </p>
+              </div>
+              {/* /.col-xl-4 */}
             </div>
+            {/* /.row */}
           </div>
+          {/* /.container */}
         </div>
+        {/* /.footer-top */}
+        <div className="footer-bottom">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-md-3 col-lg-3">
+                <img src="/images/logo/logo-footer.png" alt="logo" />
+              </div>
+              {/* /.col-lg-3 */}
+              <div className="col-sm-12 col-md-9 col-lg-9 text-right">
+                <div className="footer__copyright">
+                  <nav>
+                    <ul className="footer__copyright-links list-unstyled d-flex flex-wrap justify-content-end">
+                      <li>
+                        <a href="#">Terms &amp; Conditions </a>
+                      </li>
+                      <li>
+                        <a href="#">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a href="#">Sitemap</a>
+                      </li>
+                      <li>
+                        <a href="#">Employee login</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <p className="mb-0">
+                    {" "}
+                    © 2020 Koira, All Rights Reserved. With Love by
+                    <a href="http://themeforest.net/user/7oroof">7oroof.com</a>
+                  </p>
+                </div>
+                {/* /.Footer-copyright */}
+              </div>
+              {/* /.col-lg-9 */}
+            </div>
+            {/* /.row */}
+          </div>
+          {/* /.container */}
+        </div>
+        {/* /.Footer-bottom */}
+      </footer>
+      {/* /.Footer */}
 
-        <NavBar />
-      </header>
-
-      <style jsx>{`
-        header {
-        }
-        header.sticky {
-           {
-            /* position: sticky;
-          top: 0; */
-          }
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </>
   );
 };

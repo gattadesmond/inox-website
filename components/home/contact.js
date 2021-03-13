@@ -6,6 +6,51 @@ const Contact = () => {
   return (
     <>
       <section
+        id="bannerLayout4"
+        className="banner banner-layout4 bg-overlay bg-parallax "
+        style={{ backgroundImage: "url(/images/banners/6.jpg)" }}
+      >
+  
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-7">
+              <div className="heading heading-white mb-40 heading-2">
+                <span className="heading__subtitle">
+                  Dedicated Customer Teams &amp; An Agile Services
+                </span>
+                <h3 className="heading__title">
+                  Serving Impressive List Of Long Term Clients!
+                </h3>
+                <p className="heading__desc">
+                  Our worldwide presence ensures timeliness, cost efficiency and
+                  compliance adherence required to ensure your timelines are
+                  met. Serving with experience aNd expertise in multiple
+                  industries, as one of the World's leading Corporation!
+                </p>
+              </div>
+              {/* /.heading */}
+              <a href="#" className="btn btn__primary btn__link">
+                <i className="icon-arrow-right" />{" "}
+                <span>Download our Brochure</span>
+              </a>
+            </div>
+            {/* /.col-lg-7 */}
+            <div className="col-sm-12 col-md-12 col-lg-4 offset-lg-1">
+              <blockquote className="blockquote">
+                You are helping to lead the charge; we can help you build on
+                your past successes and prepare for your great future.
+                <span className="quote__author">- Martin, koira</span>
+              </blockquote>
+            </div>
+            {/* /.col-lg-4 */}
+          </div>
+          {/* /.row */}
+        </div>
+        {/* /.container */}
+      </section>
+      {/* /. Banner layout 4 */}
+
+      <section
         id="contactLayout2"
         className="contact contact-layout2 pt-0   bg-gray"
       >
