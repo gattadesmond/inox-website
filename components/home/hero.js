@@ -19,7 +19,7 @@ const Hero = ({ sticky = true }) => {
           {[1, 2, 3].map((item, index) => (
             <SwiperSlide
               key={index}
-              className="slide-item align-v-h bg-overlay"
+              className="slide-item align-v-h bg-overlay bg-soju"
               style={{ backgroundImage: "url(https://inoxsaigon.com/upload/hinhanh/045891389322815vithumb_1366x752.jpg)" }}
               data-overlay={6}
             >
@@ -59,8 +59,7 @@ const Hero = ({ sticky = true }) => {
       </section>
 
       <style jsx>{`
-        header {
-        }
+       
         header.sticky {
            {
             /* position: sticky;

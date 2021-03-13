@@ -21,7 +21,7 @@
             height: 100%;
             z-index: 1;
             opacity: .4;
-            @include prefix(background-image, linear-gradient(top, rgba(27, 26, 26, 0.35), #1b1a1a 100%), webkit moz ms o);
+            // @include prefix(background-image, linear-gradient(top, rgba(27, 26, 26, 0.35), #1b1a1a 100%), webkit moz ms o);
         }
 
         img {
